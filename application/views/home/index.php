@@ -97,7 +97,7 @@
                         <a href="#" title="微信公众号" target="_blank">微信公众号<br><small>服务号、订阅号与企业号</small></a>
                     </h3>
                     <p>
-                        借助微信公众平台强大的业务服务和用户管理能力，根据企业实际业务特点进行服务号、订阅号和企业号的开发，帮助企业快速接入亿万微信用户。
+                        借助微信公众平台强大的业务服务和用户管理能力，HOREAX根据企业实际业务特点进行服务号、订阅号和企业号的开发，帮助企业快速接入亿万微信用户。
                     </p>
                 </div>
             </div>
@@ -108,10 +108,10 @@
                 <a href="#" title="WEB应用系统" target="_blank"><img class="lazy" src="<?=$this->config->base_url()?>public/images/web_app.png" alt="WEB应用系统" width="300" height="150"></a>
                 <div class="caption">
                     <h3>
-                        <a href="#" title="WEB应用系统" target="_blank">WEB应用系统<br><small>内容待定</small></a>
+                        <a href="#" title="WEB应用系统" target="_blank">WEB应用系统<br><small>技术助力业务突破</small></a>
                     </h3>
                     <p>
-                        内容待定
+                        越来越多企业已将信息技术视为其核心发展战略，且WEB应用技术在其中发挥着日益强大的影响力。HOREAX立足于专业的定制化开发，使用互联网应用技术解决客户痛点。
                     </p>
                 </div>
             </div>
@@ -122,10 +122,10 @@
                 <a href="#" title="展示型H5" target="_blank"><img class="lazy" src="<?=$this->config->base_url()?>public/images/html5.png" alt="展示型H5" width="300" height="150"></a>
                 <div class="caption">
                     <h3>
-                        <a href="#" title="展示型H5" target="_blank">展示型H5<br><small>内容待定</small></a>
+                        <a href="#" title="展示型H5" target="_blank">展示型H5<br><small>HTML5</small></a>
                     </h3>
                     <p>
-                        内容待定
+                        展示型H5以讲故事、幻灯片或动画的方式，来展示品牌/产品的故事或活动的预热和介绍。是最直观、快速的展现形式。
                     </p>
                 </div>
             </div>
@@ -136,10 +136,10 @@
                 <a href="#" title="交互型H5" target="_blank" ><img class="lazy" src="<?=$this->config->base_url()?>public/images/html5.png" alt="交互型H5" width="300" height="150"></a>
                 <div class="caption">
                     <h3>
-                        <a href="#" title="交互型H5" target="_blank">交互型H5<br><small>内容待定</small></a>
+                        <a href="#" title="交互型H5" target="_blank">交互型H5<br><small>HTML5</small></a>
                     </h3>
                     <p>
-                        内容待定
+                        交互型H5是目前H5制作的主流形式。配合3D全景、视频、重力感应、CSS3动画等强大的创新型互动呈现技术，让H5展示更加有趣，提高受众的参与度。
                     </p>
                 </div>
             </div>
@@ -150,10 +150,10 @@
                 <a href="#" title="游戏型H5" target="_blank"><img class="lazy" src="<?=$this->config->base_url()?>public/images/html5.png" alt="游戏型H5" width="300" height="150"></a>
                 <div class="caption">
                     <h3>
-                        <a href="#" title="游戏型H5" target="_blank">游戏型H5<br><small>内容待定</small></a>
+                        <a href="#" title="游戏型H5" target="_blank">游戏型H5<br><small>HTML5</small></a>
                     </h3>
                     <p>
-                        内容待定
+                        H5游戏拥有巨大潜力，通过将品牌或产品做成一个小游戏，并加入相应的好友PK机制，从而提高受众的参与度并增加分享机率。最终达到推广目的。
                     </p>
                 </div>
             </div>
@@ -164,10 +164,10 @@
                 <a href="#" title="PC网站" target="_blank"><img class="lazy" src="<?=$this->config->base_url()?>public/images/pc_website.png" alt="PC网站" width="300" height="150"></a>
                 <div class="caption">
                     <h3>
-                        <a href="#" title="PC网站" target="_blank">PC网站<br><small>内容待定</small></a>
+                        <a href="#" title="PC网站" target="_blank">PC网站<br><small>响应式 + 跨终端</small></a>
                     </h3>
                     <p>
-                        内容待定
+                        传统PC网站在互联网的地位越来越弱，但又是必不可少的重要组件。HOREAX通过将传统与创新相结合，让传统PC网站拥有移动互联网新特性。
                     </p>
                 </div>
             </div>
