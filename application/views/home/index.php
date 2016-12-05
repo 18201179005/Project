@@ -42,6 +42,18 @@
         .thumbnail .caption a:hover, .thumbnail .caption a:focus {
             text-decoration : none;
         }
+
+        .footer {
+            border-top: 1px solid #e5e5e5;
+            color: #777;
+            margin-top: 70px;
+            padding: 30px 0;
+        }
+
+        .footer a {
+            color: #777;
+            text-decoration : none;
+        }
     </style>
 </head>
 <body>
@@ -179,18 +191,35 @@
     </div>
 
 
-
-
-
-    <hr>
-    <footer>
-        <p class="pull-right"><a href="#">回到顶部</a></p>
-        <p>&copy; HOREAX技术支持 · 北京昊瑞联创科技有限公司</p>
-    </footer>
 </div>
 
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="pull-left"><img alt="HOREAX技术支持" src="<?=$this->config->base_url()?>public/images/logo-horeax.png" /></p>
+            </div>
+<!--            <div class="col-sm-6">-->
+<!--                <p class="pull-right"><img alt="HOREAX技术支持" src="--><?//=$this->config->base_url()?><!--public/images/logo-horeax.png" /></p>-->
+<!--            </div>-->
 
-<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+        </div>
+        <hr>
+        <div class="row footer-bottom">
+            <ul class="list-inline text-center">
+                <li><a href="http://www.horeax.com/" title="北京昊瑞联创科技有限公司" target="_blank"><span class="glyphicon glyphicon-link"></span> 北京昊瑞联创科技有限公司</a></li>
+                <li><a href="http://www.miibeian.gov.cn/" target="_blank"><span class="glyphicon glyphicon-link"></span> 京ICP备16040463号</a></li>
+<!--                <li>京公网安备11010802014853</li>-->
+            </ul>
+        </div>
+
+    </div>
+
+
+</footer>
+
+
+<script src="<?=$this->config->base_url()?>public/js/jquery.min.js"></script>
 <script src="<?=$this->config->base_url()?>public/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
