@@ -1,0 +1,20 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.footer {
+    border-top: 1px solid #e5e5e5;
+    color: #777;
+    margin-top: 70px;
+    padding: 30px 0;
+}
+
+.footer a {
+    color: #777;
+    text-decoration : none;
+}
+
+.label-done {
+    background-color: #000000;
+}

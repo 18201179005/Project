@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>案例精选 - HOREAX技术支持</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta name="keywords" content="HOREAX,HOREAX技术支持,HOREAX案例精选,北京昊瑞联创科技有限公司"/>
     <meta name="description" content="HOREAX技术支持是北京昊瑞联创科技有限公司旗下品牌，专注于为客户提供专业、高效、易用的互联网应用技术解决方案" />
     <meta name="author" content="HOREAX技术支持">
@@ -11,16 +12,12 @@
     <meta name="renderer" content="webkit">
     <!-- Bootstrap -->
     <link href="<?=$this->config->base_url()?>public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?=$this->config->base_url()?>public/css/public.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="<?=$this->config->base_url()?>public/js/html5shiv.min.js"></script>
     <script src="<?=$this->config->base_url()?>public/js/respond.min.js"></script>
     <![endif]-->
     <style>
-        body {
-            padding-top: 50px;
-            padding-bottom: 20px;
-        }
-
         .projects-header {
             display: block;
             font-weight: 200;
@@ -43,17 +40,6 @@
             text-decoration : none;
         }
 
-        .footer {
-            border-top: 1px solid #e5e5e5;
-            color: #777;
-            margin-top: 70px;
-            padding: 30px 0;
-        }
-
-        .footer a {
-            color: #777;
-            text-decoration : none;
-        }
     </style>
 </head>
 <body>
@@ -96,10 +82,10 @@
 
         <div class="col-sm-6 col-md-4 col-lg-3 ">
             <div class="thumbnail" style="height: 352px;">
-                <a href="#" title="WEB应用系统" target="_blank"><img class="lazy" src="<?=$this->config->base_url()?>public/images/web_app.png" alt="WEB应用系统" width="300" height="150"></a>
+                <a href="<?=$this->config->base_url()?>lists/web_app" title="WEB应用系统" target="_blank"><img class="lazy" src="<?=$this->config->base_url()?>public/images/web_app.png" alt="WEB应用系统" width="300" height="150"></a>
                 <div class="caption">
                     <h3>
-                        <a href="#" title="WEB应用系统" target="_blank">WEB应用系统<br><small>技术助力业务突破</small></a>
+                        <a href="<?=$this->config->base_url()?>lists/web_app" title="WEB应用系统" target="_blank">WEB应用系统<br><small>技术助力业务突破</small></a>
                     </h3>
                     <p>
                         越来越多企业已将信息技术视为其核心发展战略，且WEB应用技术在其中发挥着日益强大的影响力。HOREAX立足于专业的定制化开发，使用互联网应用技术解决客户痛点。
@@ -172,31 +158,8 @@
 
 </div>
 
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <p class="pull-left"><img alt="HOREAX技术支持" src="<?=$this->config->base_url()?>public/images/logo-horeax.png" /></p>
-            </div>
-            <!--
-            <div class="col-sm-6">
-                <p class="pull-right"><img alt="HOREAX技术支持" src="<?=$this->config->base_url()?>public/images/logo-horeax.png" /></p>
-            </div>
-            -->
-        </div>
-        <hr>
-        <div class="row footer-bottom">
-            <ul class="list-inline text-center">
-                <li><a href="http://www.horeax.com/" title="北京昊瑞联创科技有限公司" target="_blank"><span class="glyphicon glyphicon-link"></span> 北京昊瑞联创科技有限公司</a></li>
-                <li><a href="http://www.miibeian.gov.cn/" target="_blank"><span class="glyphicon glyphicon-link"></span> 京ICP备16040463号</a></li>
-<!--                <li>京公网安备11010802014853</li>-->
-            </ul>
-        </div>
+<?php $this->load->view('common/footer'); ?>
 
-    </div>
-
-
-</footer>
 
 
 <script src="<?=$this->config->base_url()?>public/js/jquery.min.js"></script>
