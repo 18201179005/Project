@@ -4,65 +4,23 @@
     <meta charset="utf-8">
     <title>WEB应用系统 - 案例精选 - HOREAX技术支持</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="keywords" content="HOREAX,HOREAX技术支持,HOREAX案例精选,北京昊瑞联创科技有限公司"/>
+    <meta name="keywords" content="HOREAX,HOREAX技术支持,HOREAX案例精选,WEB应用系统,北京昊瑞联创科技有限公司"/>
     <meta name="description" content="HOREAX技术支持是北京昊瑞联创科技有限公司旗下品牌，专注于为客户提供专业、高效、易用的互联网应用技术解决方案" />
     <meta name="author" content="HOREAX技术支持">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
     <!-- Bootstrap -->
     <link href="<?=$this->config->base_url()?>public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?=$this->config->base_url()?>public/css/public.css" rel="stylesheet">
+
     <!--[if lt IE 9]>
     <script src="<?=$this->config->base_url()?>public/js/html5shiv.min.js"></script>
     <script src="<?=$this->config->base_url()?>public/js/respond.min.js"></script>
     <![endif]-->
-    <style>
-        body {
-            padding-top: 50px;
-            padding-bottom: 20px;
-        }
-
-        .footer {
-            border-top: 1px solid #e5e5e5;
-            color: #777;
-            margin-top: 70px;
-            padding: 30px 0;
-        }
-
-        .footer a {
-            color: #777;
-            text-decoration : none;
-        }
-
-        .label-done {
-            background-color: #000000;
-        }
-    </style>
 </head>
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="sr-only">切换导航</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="<?=$this->config->base_url()?>">HOREAX案例精选</a>
-        </div>
-
-
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="<?=$this->config->base_url()?>">WEB应用系统</a></li>
-            </ul>
-        </div>
-
-    </div>
-</nav>
-
+<?php $this->load->view('common/header'); ?>
 
 <div class="container" style="margin-top: 20px;">
 
@@ -155,31 +113,8 @@
 </div>
 
 
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <p class="pull-left"><img alt="HOREAX技术支持" src="<?=$this->config->base_url()?>public/images/logo-horeax.png" /></p>
-            </div>
-            <!--
-            <div class="col-sm-6">
-                <p class="pull-right"><img alt="HOREAX技术支持" src="<?=$this->config->base_url()?>public/images/logo-horeax.png" /></p>
-            </div>
-            -->
-        </div>
-        <hr>
-        <div class="row footer-bottom">
-            <ul class="list-inline text-center">
-                <li><a href="http://www.horeax.com/" title="北京昊瑞联创科技有限公司" target="_blank"><span class="glyphicon glyphicon-link"></span> 北京昊瑞联创科技有限公司</a></li>
-                <li><a href="http://www.miibeian.gov.cn/" target="_blank"><span class="glyphicon glyphicon-link"></span> 京ICP备16040463号</a></li>
-                <!--                <li>京公网安备11010802014853</li>-->
-            </ul>
-        </div>
+<?php $this->load->view('common/footer'); ?>
 
-    </div>
-
-
-</footer>
 
 
 <script src="<?=$this->config->base_url()?>public/js/jquery.min.js"></script>
