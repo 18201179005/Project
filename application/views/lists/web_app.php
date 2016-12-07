@@ -27,18 +27,18 @@
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <?php foreach($banner_result as $key => $value): ?>
+                <li data-target="#carousel-example-generic" data-slide-to="<?=$key?>" class="<?=$key == 0 ? 'active' : ''?>"></li>
+            <?php endforeach; ?>
         </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="<?=$this->config->base_url()?>public/images/1.jpg" alt="...">
-            </div>
-            <div class="item">
-                <img src="<?=$this->config->base_url()?>public/images/2.jpg" alt="...">
-            </div>
+            <?php foreach($banner_result as $key => $value): ?>
+                <div class="item <?=$key == 0 ? 'active' : ''?>">
+                    <img src="<?=$this->config->base_url()?>project/<?=$value['cid']?>/<?=$value['id']?>/banner.jpg" />
+                </div>
+            <?php endforeach; ?>
         </div>
 
         <!-- Controls -->
@@ -78,30 +78,21 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>1-1</td>
-                    <td>2017红衫资本联合真格基金携成员企业校园招聘</td>
-                    <td>线下宣讲会预约系统</td>
-                    <td><img src="<?=$this->config->base_url()?>public/images/11.png"></td>
-                    <td><span class="label label-done">已下线</span></td>
-                    <td>
-                        <a role="button" class="btn btn-default btn-xs">详情</a>
-                        <a role="button" class="btn btn-info btn-xs">在线演示</a>
-                    </td>
 
-                </tr>
-                <tr>
-                    <td>1-2</td>
-                    <td>第六届华为财务精英挑战赛</td>
-                    <td>现场投票管理系统</td>
-                    <td><img src="<?=$this->config->base_url()?>public/images/12.png"></td>
-                    <td><span class="label label-done">- 已下线 -</span></td>
-                    <td>
-                        <a role="button" class="btn btn-default btn-xs">详情</a>
-                        <a role="button" class="btn btn-info btn-xs">在线演示</a>
-                    </td>
+                <?php foreach($list_result as $key => $value): ?>
+                    <tr>
+                        <td><?=$value['cid']?>-<?=$value['id']?></td>
+                        <td><?=$value['name']?></td>
+                        <td><?=$value['type']?></td>
+                        <td><img src="<?=$this->config->base_url()?>project/<?=$value['cid']?>/<?=$value['id']?>/logo.png"></td>
+                        <td><span class="label label-done">已下线</span></td>
+                        <td>
+                            <a role="button" class="btn btn-default btn-xs">详情</a>
+                            <a role="button" class="btn btn-info btn-xs">在线演示</a>
+                        </td>
 
-                </tr>
+                    </tr>
+                <?php endforeach; ?>
 
                 </tbody>
             </table>
