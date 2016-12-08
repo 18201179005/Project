@@ -30,17 +30,17 @@
 
         <li><a href="<?=$this->config->base_url()?>"><span class="glyphicon glyphicon-home"></span> HOREAX案例精选</a></li>
         <li><a href="<?=$this->config->base_url()?>lists/web_app">WEB应用系统</a></li>
-        <li class="active">2017红衫资本联合真格基金携成员企业校园招聘</li>
+        <li class="active"><?=$info_result['name']?></li>
     </ol>
 
     <div class="panel panel-default">
         <div class="panel-heading">项目简介</div>
         <div class="panel-body">
-            <img src="<?=$this->config->base_url()?>project/2/1/banner.jpg" width="100%" />
+            <img src="<?=$this->config->base_url()?>project/<?=$info_result['cid']?>/<?=$info_result['id']?>/banner.jpg" width="100%" />
             <hr/>
-            <p>017红衫资本联合真格基金携成员企业校园招聘阿斯顿上看见啦疯狂巴士的分类及卡布斯的法律框架啊舍不得饭卡就收到发生了</p>
-            <p>017红衫资本联合真格基金携成布斯的法律框架啊舍不得饭卡就收到发生了</p>
-            <strong>测试帐号: <span class="label label-default">13412312322</span> ,密码:123123 </strong>
+            <div>
+                <?=$info_result['presentation']?>
+            </div>
         </div>
     </div>
 
@@ -61,12 +61,15 @@
                 </tr>
                 </thead>
                 <tbody>
+                <?php foreach($link_result as $key => $value): ?>
                     <tr>
-                        <td>线下宣讲会预约系统</td>
-                        <td>PC</td>
-                        <td><a role="button" class="btn btn-info btn-xs">在线演示</a></td>
+                        <td><?=$value['name']?></td>
+                        <td><?=$value['terminal']?></td>
+                        <td><a href="<?=$value['link']?>" target="_blank" role="button" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-link"></span> 在线演示</a></td>
 
                     </tr>
+                <?php endforeach; ?>
+
                 </tbody>
             </table>
 
