@@ -28,8 +28,8 @@
 
     <ol class="breadcrumb">
 
-        <li><a href="#"><span class="glyphicon glyphicon-home"></span> HOREAX案例精选</a></li>
-        <li><a href="#">WEB应用系统</a></li>
+        <li><a href="<?=$this->config->base_url()?>"><span class="glyphicon glyphicon-home"></span> HOREAX案例精选</a></li>
+        <li><a href="<?=$this->config->base_url()?>lists/web_app">WEB应用系统</a></li>
         <li class="active">2017红衫资本联合真格基金携成员企业校园招聘</li>
     </ol>
 

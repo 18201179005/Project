@@ -87,7 +87,7 @@
                         <td><img src="<?=$this->config->base_url()?>project/<?=$value['cid']?>/<?=$value['id']?>/logo.png"></td>
                         <td><span class="label label-done">已下线</span></td>
                         <td>
-                            <a role="button" class="btn btn-default btn-xs">详情</a>
+                            <a href="<?=$this->config->base_url()?>details/web_app/<?=$value['id']?>" role="button" class="btn btn-default btn-xs">详情</a>
                             <a role="button" class="btn btn-info btn-xs">在线演示</a>
                         </td>
 
