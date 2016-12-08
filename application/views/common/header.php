@@ -16,7 +16,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="#">微信公众号</a></li>
 
-                <?php if ($this->router->class== 'lists' && $this->router->method == 'web_app'): ?>
+                <?php if (($this->router->class== 'lists' && $this->router->method == 'web_app') || $this->router->class== 'details' && $this->router->method == 'web_app'): ?>
                     <li class="active"><a href="#">WEB应用系统</a></li>
                 <?php else: ?>
                     <li><a href="<?=$this->config->base_url()?>lists/web_app">WEB应用系统</a></li>
