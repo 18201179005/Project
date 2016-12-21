@@ -33,14 +33,39 @@
         <li class="active"><?=$info_result['name']?></li>
     </ol>
 
-    <div class="panel panel-default">
-        <div class="panel-heading">项目简介</div>
-        <div class="panel-body">
-            <img src="<?=$this->config->base_url()?>project/<?=$info_result['cid']?>/<?=$info_result['id']?>/banner.jpg" width="100%" />
-            <hr/>
-            <div>
-                <?=$info_result['presentation']?>
+
+
+
+    <div class="row">
+        <div class="col-md-9 col-sm-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">项目简介</div>
+                <div class="panel-body">
+                    <img src="<?=$this->config->base_url()?>project/<?=$info_result['cid']?>/<?=$info_result['id']?>/banner.jpg" width="100%" />
+                    <hr/>
+                    <div>
+                        <?=$info_result['presentation']?>
+                    </div>
+                </div>
             </div>
+
+        </div>
+
+        <div class="col-md-3 col-sm-4">
+
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">项目演示地址:</div>
+                <div class="list-group">
+                    <?php foreach($link_result as $key => $value): ?>
+                        <a href="<?=$this->config->base_url()?>repositories/<?=$info_result['cid']?>/<?=$info_result['id']?>/<?=$value['link']?>/" target="_blank" class="list-group-item">
+                            <h5 class="list-group-item-heading"><?=$key+1?> - <?=$value['name']?></h5>
+                            <p class="list-group-item-text text-muted">支持终端：<?=$value['terminal']?></p>
+                        </a>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -48,38 +73,6 @@
 
 
 
-    <div class="panel panel-default">
-        <div class="panel-heading">项目演示地址:</div>
-
-        <div class="table-responsive">
-            <table class="table table-striped table-bordered table-hover">
-                <thead>
-                <tr>
-                    <th>名称</th>
-                    <th>支持终端</th>
-                    <th>访问地址</th>
-                </tr>
-                </thead>
-                <tbody>
-                <?php foreach($link_result as $key => $value): ?>
-                    <tr>
-                        <td><?=$value['name']?></td>
-                        <td><?=$value['terminal']?></td>
-                        <?php if($value['link']): ?>
-                            <td><a href="<?=$this->config->base_url()?>repositories/<?=$info_result['cid']?>/<?=$info_result['id']?>/<?=$value['link']?>/" target="_blank" role="button" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-link"></span> 在线演示</a></td>
-                        <?php else: ?>
-                            <td></td>
-                        <?php endif; ?>
-
-                    </tr>
-                <?php endforeach; ?>
-
-                </tbody>
-            </table>
-
-        </div>
-
-    </div>
 
 
 

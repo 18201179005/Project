@@ -82,7 +82,7 @@
 
         <div class="col-sm-6 col-md-4 col-lg-3 ">
             <div class="thumbnail" style="height: 352px;">
-                <a href="<?=$this->config->base_url()?>lists/web_app" title="WEB应用系统" target="_blank"><img class="lazy" src="<?=$this->config->base_url()?>public/images/web_app.png" alt="WEB应用系统" width="300" height="150"></a>
+                <a href="<?=$this->config->base_url()?>lists/web_app" title="WEB应用系统"><img class="lazy" src="<?=$this->config->base_url()?>public/images/web_app.png" alt="WEB应用系统" width="300" height="150"></a>
                 <div class="caption">
                     <h3>
                         <a href="<?=$this->config->base_url()?>lists/web_app" title="WEB应用系统" target="_blank">WEB应用系统<br><small>技术助力业务突破</small></a>
