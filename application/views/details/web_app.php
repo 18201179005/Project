@@ -65,7 +65,11 @@
                     <tr>
                         <td><?=$value['name']?></td>
                         <td><?=$value['terminal']?></td>
-                        <td><a href="<?=$value['link']?>" target="_blank" role="button" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-link"></span> 在线演示</a></td>
+                        <?php if($value['link']): ?>
+                            <td><a href="<?=$this->config->base_url()?>repositories/<?=$info_result['cid']?>/<?=$info_result['id']?>/<?=$value['link']?>/" target="_blank" role="button" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-link"></span> 在线演示</a></td>
+                        <?php else: ?>
+                            <td></td>
+                        <?php endif; ?>
 
                     </tr>
                 <?php endforeach; ?>
