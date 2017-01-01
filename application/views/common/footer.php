@@ -5,7 +5,7 @@
                 <p class="pull-left"><img alt="HOREAX技术支持" src="<?=$this->config->base_url()?>public/images/logo-horeax.png" /></p>
             </div>
             <div class="col-sm-6 hidden-xs">
-                <p class="pull-right"><img alt="HOREAX技术支持" src="<?=$this->config->base_url()?>public/images/service-line.png" /></p>
+                <p class="pull-right"><img alt="4000912858" src="<?=$this->config->base_url()?>public/images/service-line.png" /></p>
             </div>
         </div>
         <hr>
