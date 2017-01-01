@@ -4,11 +4,9 @@
             <div class="col-sm-6">
                 <p class="pull-left"><img alt="HOREAX技术支持" src="<?=$this->config->base_url()?>public/images/logo-horeax.png" /></p>
             </div>
-            <!--
-            <div class="col-sm-6">
-                <p class="pull-right"><img alt="HOREAX技术支持" src="<?=$this->config->base_url()?>public/images/logo-horeax.png" /></p>
+            <div class="col-sm-6 hidden-xs">
+                <p class="pull-right"><img alt="HOREAX技术支持" src="<?=$this->config->base_url()?>public/images/service-line.png" /></p>
             </div>
-            -->
         </div>
         <hr>
         <div class="row footer-bottom">
